@@ -3,199 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViralCuts - Cinema-Quality Video Editing</title>
+    <title>Viral Cuts - Where Raw Footage Becomes Cinema</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Loading Animation -->
+    <!-- Particle Container -->
+    <div id="particles-container"></div>
+    
+    <!-- Cursor Trail -->
+    <div class="cursor-trail" id="cursorTrail"></div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Cinematic Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
-        <div class="loading-logo">
-            <div class="logo-text">ViralCuts</div>
-            <div class="loading-bar"></div>
+        <div class="loading-content">
+            <div class="morphing-logo">
+                <span class="logo-char">V</span>
+                <span class="logo-char">I</span>
+                <span class="logo-char">R</span>
+                <span class="logo-char">A</span>
+                <span class="logo-char">L</span>
+                <span class="logo-spacer"></span>
+                <span class="logo-char">C</span>
+                <span class="logo-char">U</span>
+                <span class="logo-char">T</span>
+                <span class="logo-char">S</span>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+                <div class="loading-percentage">0%</div>
+            </div>
+            <div class="matrix-rain"></div>
         </div>
     </div>
 
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-container">
-            <div class="nav-logo">ViralCuts</div>
+            <div class="nav-logo">
+                <span class="logo-text">Viral Cuts</span>
+                <div class="logo-glow"></div>
+            </div>
             <div class="nav-links">
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#process" class="nav-link">Process</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#services" class="nav-link">
+                    <span>Services</span>
+                    <div class="link-glow"></div>
+                </a>
+                <a href="#portfolio" class="nav-link">
+                    <span>Portfolio</span>
+                    <div class="link-glow"></div>
+                </a>
+                <a href="#team" class="nav-link">
+                    <span>Team</span>
+                    <div class="link-glow"></div>
+                </a>
+                <a href="#pricing" class="nav-link">
+                    <span>Pricing</span>
+                    <div class="link-glow"></div>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span>Contact</span>
+                    <div class="link-glow"></div>
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Advanced Effects -->
     <section class="hero" id="hero">
         <div class="hero-bg">
+            <div class="particle-field"></div>
             <div class="floating-element floating-1"></div>
             <div class="floating-element floating-2"></div>
             <div class="floating-element floating-3"></div>
-            <div class="gradient-overlay"></div>
+            <div class="floating-element floating-4"></div>
+            <div class="floating-element floating-5"></div>
+            <div class="holographic-overlay"></div>
+            <div class="matrix-bg"></div>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">Cinema-Quality<br><span class="gradient-text">Video Editing</span></h1>
-            <p class="hero-subtitle">Transform your content into viral masterpieces that dominate feeds</p>
-            <button class="cta-button glow-button" id="heroBtn">
-                <span>Start Creating</span>
-                <div class="button-glow"></div>
+            <h1 class="hero-title">
+                <span class="morphing-text">Viral Cuts</span>
+                <div class="neon-border"></div>
+            </h1>
+            <p class="hero-subtitle typewriter" data-text="Where Raw Footage Becomes Cinema"></p>
+            <p class="hero-tagline glitch-text">We don't just edit videos. We create viral masterpieces that break the internet.</p>
+            <button class="cta-button liquid-button" id="heroBtn">
+                <span class="button-text">Create Magic With Us</span>
+                <div class="liquid-fill"></div>
+                <div class="button-particles"></div>
             </button>
+            <div class="floating-stats">
+                <div class="stat-bubble">
+                    <span class="stat-number">500M+</span>
+                    <span class="stat-label">Views</span>
+                </div>
+                <div class="stat-bubble">
+                    <span class="stat-number">2500+</span>
+                    <span class="stat-label">Videos</span>
+                </div>
+                <div class="stat-bubble">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Success</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section with 3D Cards -->
     <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">
-                Our <span class="gradient-text">Services</span>
-                <div class="title-underline"></div>
+                <span class="split-text">Our Services</span>
+                <div class="title-morphing-underline"></div>
             </h2>
             <div class="services-grid">
-                <div class="service-card" data-service="production">
-                    <div class="service-icon">🎬</div>
-                    <h3 class="service-title">Full Production Editing</h3>
-                    <p class="service-description">Complete video transformation with cinema-grade color grading, sound design, and professional effects that rival Hollywood productions</p>
-                    <ul class="service-features">
-                        <li>4K/8K Resolution</li>
-                        <li>Color Grading</li>
-                        <li>Sound Design</li>
-                        <li>Professional Effects</li>
-                    </ul>
-                </div>
-                <div class="service-card" data-service="viral">
-                    <div class="service-icon">🔥</div>
-                    <h3 class="service-title">Viral Short-Form Content</h3>
-                    <p class="service-description">TikTok, Instagram Reels, YouTube Shorts optimized for maximum engagement and guaranteed viral potential</p>
-                    <ul class="service-features">
-                        <li>Platform Optimization</li>
-                        <li>Trend Analysis</li>
-                        <li>Hook Creation</li>
-                        <li>Viral Formula</li>
-                    </ul>
-                </div>
-                <div class="service-card" data-service="vfx">
-                    <div class="service-icon">✨</div>
-                    <h3 class="service-title">Motion Graphics & VFX</h3>
-                    <p class="service-description">Custom animations, 3D elements, and visual effects that make your content impossible to scroll past</p>
-                    <ul class="service-features">
-                        <li>3D Animation</li>
-                        <li>Custom Graphics</li>
-                        <li>VFX Integration</li>
-                        <li>Brand Animation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio/Stats Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="testimonials-carousel">
-                <div class="testimonial active" data-testimonial="0">
-                    <p>"This is incredible! Our views exploded overnight!"</p>
-                    <span>- Tech Startup Founder, TechFlow</span>
-                </div>
-                <div class="testimonial" data-testimonial="1">
-                    <p>"Best video editing team in the industry, hands down."</p>
-                    <span>- Marketing Director, GrowthCorp</span>
-                </div>
-                <div class="testimonial" data-testimonial="2">
-                    <p>"They made our content go viral instantly. Mind-blown!"</p>
-                    <span>- Content Creator, CreativeStudio</span>
-                </div>
-                <div class="testimonial" data-testimonial="3">
-                    <p>"ROI was insane. 10x our previous engagement rates."</p>
-                    <span>- CMO, ScaleUp Inc</span>
-                </div>
-            </div>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number" data-target="2000" style="color: #00d4ff;">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Videos Edited</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="100" style="color: #8b5cf6;">0</div>
-                    <div class="stat-suffix">M+</div>
-                    <div class="stat-label">Total Views Generated</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="500" style="color: #00ff88;">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Happy Clients</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <h2 class="section-title">
-                How It <span class="gradient-text">Works</span>
-            </h2>
-            <div class="process-steps">
-                <div class="process-step" data-step="1">
-                    <div class="step-icon">📤</div>
-                    <div class="step-number">01</div>
-                    <h3 class="step-title">Upload Your Footage</h3>
-                    <p class="step-description">Send us your raw content, brief, and vision through our secure portal. We handle everything from concept to completion.</p>
-                </div>
-                <div class="process-step" data-step="2">
-                    <div class="step-icon">⚡</div>
-                    <div class="step-number">02</div>
-                    <h3 class="step-title">We Work Our Magic</h3>
-                    <p class="step-description">Our team of expert editors transform your footage with professional color grading, sound design, and viral-optimized cuts.</p>
-                </div>
-                <div class="process-step" data-step="3">
-                    <div class="step-icon">🚀</div>
-                    <div class="step-number">03</div>
-                    <h3 class="step-title">Dominate The Internet</h3>
-                    <p class="step-description">Receive viral-ready content optimized for each platform. Watch your engagement and follower count skyrocket.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Showcase Section -->
-    <section class="video-showcase" id="showcase">
-        <div class="container">
-            <h2 class="section-title">
-                Viral <span class="gradient-text">Successes</span>
-            </h2>
-            <div class="showcase-grid">
-                <div class="video-preview">
-                    <div class="video-thumbnail">
-                        <div class="play-button">▶</div>
-                        <div class="video-overlay">
-                            <div class="video-title">Tech Product Launch</div>
-                            <div class="video-views">2.5M+ Views</div>
+                <div class="service-card-3d" data-service="cinematic">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon animated-icon">🎬</div>
+                            <h3 class="service-title rainbow-text">Cinematic Production</h3>
+                            <p class="service-description">Hollywood-grade color grading, professional sound design, and visual effects that rival blockbuster movies</p>
+                            <div class="service-price">from $2,500</div>
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-back">
+                            <div class="before-after-slider">
+                                <div class="before-section">
+                                    <span class="label">Before</span>
+                                    <p>Raw shaky smartphone footage</p>
+                                </div>
+                                <div class="slider-divider"></div>
+                                <div class="after-section">
+                                    <span class="label">After</span>
+                                    <p>Cinema-quality masterpiece</p>
+                                </div>
+                            </div>
+                            <ul class="service-features">
+                                <li>✨ 8K Resolution</li>
+                                <li>🎨 HDR Color Grading</li>
+                                <li>🔊 Dolby Audio</li>
+                                <li>⚡ VFX Integration</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="video-preview">
-                    <div class="video-thumbnail">
-                        <div class="play-button">▶</div>
-                        <div class="video-overlay">
-                            <div class="video-title">Brand Storytelling</div>
-                            <div class="video-views">4.8M+ Views</div>
+
+                <div class="service-card-3d" data-service="viral">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon animated-icon">🚀</div>
+                            <h3 class="service-title rainbow-text">Viral Content Factory</h3>
+                            <p class="service-description">Algorithm-optimized content that's scientifically designed to go viral across all platforms</p>
+                            <div class="service-price">from $800</div>
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-back">
+                            <div class="before-after-slider">
+                                <div class="before-section">
+                                    <span class="label">Before</span>
+                                    <p>Generic social media post</p>
+                                </div>
+                                <div class="slider-divider"></div>
+                                <div class="after-section">
+                                    <span class="label">After</span>
+                                    <p>10M+ views guaranteed</p>
+                                </div>
+                            </div>
+                            <ul class="service-features">
+                                <li>🧪 Viral Formula</li>
+                                <li>📊 A/B Testing</li>
+                                <li>📱 Platform Optimization</li>
+                                <li>📈 Trend Analysis</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="video-preview">
-                    <div class="video-thumbnail">
-                        <div class="play-button">▶</div>
-                        <div class="video-overlay">
-                            <div class="video-title">Viral Campaign</div>
-                            <div class="video-views">7.2M+ Views</div>
+
+                <div class="service-card-3d" data-service="motion">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="service-icon animated-icon">✨</div>
+                            <h3 class="service-title rainbow-text">Motion Graphics Studio</h3>
+                            <p class="service-description">3D animations, particle effects, and motion graphics that make your content impossible to ignore</p>
+                            <div class="service-price">from $1,200</div>
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-back">
+                            <div class="before-after-slider">
+                                <div class="before-section">
+                                    <span class="label">Before</span>
+                                    <p>Static boring visuals</p>
+                                </div>
+                                <div class="slider-divider"></div>
+                                <div class="after-section">
+                                    <span class="label">After</span>
+                                    <p>Dynamic eye-catching graphics</p>
+                                </div>
+                            </div>
+                            <ul class="service-features">
+                                <li>🎭 3D Animation</li>
+                                <li>⭐ Particle Systems</li>
+                                <li>🎪 Logo Animation</li>
+                                <li>🎨 Custom Graphics</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -203,111 +221,398 @@
         </div>
     </section>
 
-    <!-- Service Packages Section -->
-    <section class="packages" id="packages">
+    <!-- Interactive Portfolio Showcase -->
+    <section class="portfolio-showcase" id="portfolio">
         <div class="container">
             <h2 class="section-title">
-                Choose Your <span class="gradient-text">Package</span>
+                <span class="split-text">Viral Successes</span>
+                <div class="title-morphing-underline"></div>
             </h2>
-            <div class="packages-grid">
-                <div class="package-card">
-                    <div class="package-header">
-                        <h3 class="package-title">Scale</h3>
-                        <p class="package-description">Elevate your existing content through professional editing</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="Product Launch">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-bg tech-gradient"></div>
+                        <div class="play-button-advanced">
+                            <div class="play-icon">▶</div>
+                            <div class="play-ripples"></div>
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Tech Startup Launch</h4>
+                            <div class="video-metrics">
+                                <span class="views-counter" data-target="15200000">0</span>
+                                <span class="engagement">18.5% Engagement</span>
+                            </div>
+                            <div class="video-tags">
+                                <span class="tag">Viral</span>
+                                <span class="tag">B2B</span>
+                                <span class="tag">SaaS</span>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="package-features">
-                        <li>✓ Raw Footage Analysis</li>
-                        <li>✓ Professional Editing</li>
-                        <li>✓ Color Grading & Sound</li>
-                        <li>✓ Platform Optimization</li>
-                        <li>✓ Viral Moment Identification</li>
-                        <li>✓ Thumbnail Creation</li>
-                        <li>✓ 24/7 Support</li>
-                        <li>✓ Fast Turnaround</li>
-                    </ul>
-                    <button class="package-button">KNOW MORE</button>
                 </div>
-                <div class="package-card premium">
-                    <div class="package-header">
-                        <h3 class="package-title">Launch</h3>
-                        <p class="package-description">Complete video strategy from concept to viral success</p>
+
+                <div class="portfolio-item" data-category="Brand Story">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-bg fashion-gradient"></div>
+                        <div class="play-button-advanced">
+                            <div class="play-icon">▶</div>
+                            <div class="play-ripples"></div>
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Fashion Brand Campaign</h4>
+                            <div class="video-metrics">
+                                <span class="views-counter" data-target="8700000">0</span>
+                                <span class="engagement">22.1% Engagement</span>
+                            </div>
+                            <div class="video-tags">
+                                <span class="tag">Lifestyle</span>
+                                <span class="tag">B2C</span>
+                                <span class="tag">Trending</span>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="package-features">
-                        <li>✓ Strategy Development</li>
-                        <li>✓ Professional Editing</li>
-                        <li>✓ Motion Graphics & VFX</li>
-                        <li>✓ Platform Optimization</li>
-                        <li>✓ Viral Campaign Management</li>
-                        <li>✓ Thumbnail & Graphics Suite</li>
-                        <li>✓ 24/7 Support</li>
-                        <li>✓ Dedicated Account Manager</li>
-                        <li>✓ Content Strategy Planning</li>
-                        <li>✓ Performance Analytics</li>
-                    </ul>
-                    <button class="package-button">KNOW MORE</button>
+                </div>
+
+                <div class="portfolio-item" data-category="Viral Marketing">
+                    <div class="video-thumbnail">
+                        <div class="thumbnail-bg crypto-gradient"></div>
+                        <div class="play-button-advanced">
+                            <div class="play-icon">▶</div>
+                            <div class="play-ripples"></div>
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Crypto Project Hype</h4>
+                            <div class="video-metrics">
+                                <span class="views-counter" data-target="25800000">0</span>
+                                <span class="engagement">31.4% Engagement</span>
+                            </div>
+                            <div class="video-tags">
+                                <span class="tag">Crypto</span>
+                                <span class="tag">Viral</span>
+                                <span class="tag">Web3</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
+    <!-- Team Showcase with Flip Cards -->
+    <section class="team" id="team">
         <div class="container">
             <h2 class="section-title">
-                Frequently <span class="gradient-text">Asked</span>
+                <span class="split-text">Meet The Legends</span>
+                <div class="title-morphing-underline"></div>
             </h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What makes us different from other video editing agencies?</span>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We combine Hollywood-level production quality with viral content strategy. Our team has worked on content that's generated over 100M views and we guarantee results.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="avatar-container">
+                                <div class="avatar alex-avatar"></div>
+                                <div class="avatar-glow"></div>
+                            </div>
+                            <h3>Alex Rivera</h3>
+                            <p>Creative Director</p>
+                            <div class="experience">12+ years</div>
+                        </div>
+                        <div class="team-card-back">
+                            <h3>Alex Rivera</h3>
+                            <div class="skills">
+                                <div class="skill">
+                                    <span>Color Grading</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="98%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Visual Effects</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Cinematography</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="awards">
+                                <span class="award-badge">🏆 Emmy Nominee</span>
+                                <span class="award-badge">🎬 Cannes Winner</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How fast is our turnaround time?</span>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Standard projects: 3-5 days. Rush jobs: 24-48 hours. We're built for speed without compromising quality.</p>
+
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="avatar-container">
+                                <div class="avatar maya-avatar"></div>
+                                <div class="avatar-glow"></div>
+                            </div>
+                            <h3>Maya Chen</h3>
+                            <p>Motion Graphics Lead</p>
+                            <div class="experience">8+ years</div>
+                        </div>
+                        <div class="team-card-back">
+                            <h3>Maya Chen</h3>
+                            <div class="skills">
+                                <div class="skill">
+                                    <span>3D Animation</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="96%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>After Effects</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="99%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Cinema 4D</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="94%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="awards">
+                                <span class="award-badge">✏️ D&AD Pencil</span>
+                                <span class="award-badge">🎯 Adobe Max</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What's our pricing structure?</span>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We offer flexible packages starting from $500 for basic editing up to $5000+ for complete viral campaigns. Custom quotes available.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Do you guarantee viral success?</span>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>While we can't guarantee specific view counts, our track record speaks for itself. 95% of our content achieves above-average engagement rates.</p>
+
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="avatar-container">
+                                <div class="avatar jordan-avatar"></div>
+                                <div class="avatar-glow"></div>
+                            </div>
+                            <h3>Jordan Smith</h3>
+                            <p>Viral Strategy Director</p>
+                            <div class="experience">6+ years</div>
+                        </div>
+                        <div class="team-card-back">
+                            <h3>Jordan Smith</h3>
+                            <div class="skills">
+                                <div class="skill">
+                                    <span>Algorithm Optimization</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="97%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Trend Analysis</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>A/B Testing</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="93%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="awards">
+                                <span class="award-badge">🌟 Forbes 30</span>
+                                <span class="award-badge">🧠 Marketing Genius</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Interactive Pricing Calculator -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="split-text">Interactive Price Calculator</span>
+                <div class="title-morphing-underline"></div>
+            </h2>
+            <div class="pricing-calculator">
+                <div class="calculator-controls">
+                    <div class="control-group">
+                        <label>Video Length</label>
+                        <div class="slider-container">
+                            <input type="range" id="lengthSlider" min="1" max="60" value="5" class="neon-slider">
+                            <div class="slider-value"><span id="lengthValue">5</span> minutes</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label>Complexity Level</label>
+                        <div class="slider-container">
+                            <input type="range" id="complexitySlider" min="1" max="5" value="3" class="neon-slider">
+                            <div class="slider-value">Level <span id="complexityValue">3</span></div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label>Turnaround Time</label>
+                        <div class="slider-container">
+                            <input type="range" id="turnaroundSlider" min="1" max="14" value="7" class="neon-slider">
+                            <div class="slider-value"><span id="turnaroundValue">7</span> days</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-display">
+                    <div class="price-animation">
+                        <div class="currency">$</div>
+                        <div class="price-number" id="calculatedPrice">2,500</div>
+                    </div>
+                    <div class="price-breakdown">
+                        <div class="breakdown-item">
+                            <span>Base Price:</span>
+                            <span id="basePrice">$1,500</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Complexity:</span>
+                            <span id="complexityPrice">+$800</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Rush Fee:</span>
+                            <span id="rushPrice">+$200</span>
+                        </div>
+                    </div>
+                    <button class="get-quote-btn">
+                        <span>Get Custom Quote</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Badges with Award Effects -->
+    <section class="achievements">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="split-text">Industry Recognition</span>
+                <div class="title-morphing-underline"></div>
+            </h2>
+            <div class="achievements-grid">
+                <div class="achievement-badge shine-effect">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-content">
+                        <h4>Best Video Production Agency 2024</h4>
+                        <p>Digital Marketing Awards</p>
+                    </div>
+                    <div class="badge-shine"></div>
+                </div>
+                <div class="achievement-badge shine-effect">
+                    <div class="badge-icon">🎯</div>
+                    <div class="badge-content">
+                        <h4>Innovation in Motion Graphics</h4>
+                        <p>Creative Industry Awards</p>
+                    </div>
+                    <div class="badge-shine"></div>
+                </div>
+                <div class="achievement-badge shine-effect">
+                    <div class="badge-icon">🚀</div>
+                    <div class="badge-content">
+                        <h4>Viral Content Specialists</h4>
+                        <p>Social Media Excellence</p>
+                    </div>
+                    <div class="badge-shine"></div>
+                </div>
+                <div class="achievement-badge shine-effect">
+                    <div class="badge-icon">⭐</div>
+                    <div class="badge-content">
+                        <h4>Client Satisfaction Leader</h4>
+                        <p>Industry Rating Council</p>
+                    </div>
+                    <div class="badge-shine"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials with Advanced Carousel -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="split-text">Client Success Stories</span>
+                <div class="title-morphing-underline"></div>
+            </h2>
+            <div class="testimonials-carousel-advanced">
+                <div class="testimonial-card active" data-index="0">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p>They didn't just edit our video - they created a viral phenomenon that got us 50M views and $2M in funding.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar sarah-avatar"></div>
+                            <div class="author-info">
+                                <h4>Sarah Kim</h4>
+                                <p>CEO, TechFlow Startup</p>
+                                <div class="results">50M views, $2M raised</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-index="1">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p>ROI was insane. Every dollar spent returned $25 in revenue. These guys are magicians.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar marcus-avatar"></div>
+                            <div class="author-info">
+                                <h4>Marcus Johnson</h4>
+                                <p>CMO, GrowthHackers Inc</p>
+                                <div class="results">2500% ROI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-index="2">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p>From unknown to industry leader in 6 months. Their content strategy is unmatched.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar priya-avatar"></div>
+                            <div class="author-info">
+                                <h4>Priya Patel</h4>
+                                <p>Founder, InnovateNow</p>
+                                <div class="results">10x brand awareness</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Chat Bubble -->
+    <div class="live-chat-bubble" id="chatBubble">
+        <div class="chat-icon">💬</div>
+        <div class="chat-notification">3</div>
+        <div class="chat-pulse"></div>
+    </div>
 
     <!-- Footer/CTA Section -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <h2 class="footer-title">
-                    Ready to Go <span class="gradient-text">Viral</span>?
+                    <span class="split-text">Ready to Go Viral?</span>
                 </h2>
                 <p class="footer-subtitle">Join the creators dominating social media with our cinema-quality editing</p>
-                <button class="cta-button glow-button footer-btn">
-                    <span>Let's Create Magic</span>
-                    <div class="button-glow"></div>
+                <button class="cta-button liquid-button footer-btn">
+                    <span class="button-text">Let's Create Magic</span>
+                    <div class="liquid-fill"></div>
+                    <div class="button-particles"></div>
                 </button>
                 <div class="footer-links">
                     <p>hello@viralcuts.com | +1 (555) 123-4567</p>
